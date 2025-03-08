@@ -2,6 +2,7 @@ import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import dbConnect from "@/lib/dbConnect";
 export const authOptions: NextAuthOptions = {
+    // now started working on login page 
     providers: [
         CredentialsProvider({
             id: "credentials",
