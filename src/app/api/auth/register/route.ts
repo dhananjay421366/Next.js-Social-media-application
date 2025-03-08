@@ -3,8 +3,6 @@ import dbConnect from "@/lib/dbConnect";
 import User from "@/models/User.model";
 import bcrypt from "bcryptjs";
 
-
-
 export async function POST(request: Request) {
     try {
         // Connect to the database
