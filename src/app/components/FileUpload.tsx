@@ -84,6 +84,8 @@ export default function FileUpload({
                 onUploadProgress={handleProgress}
                 onUploadStart={handleStartUpload}
                 validateFile={validateFile}
+                urlEndpoint="https://ik.imagekit.io/e235o3ihl"
+                publicKey="public_3HVn0EfDloYXHsLghXAOAkgLScM="
             />
 
             {uploading && (
