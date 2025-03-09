@@ -60,12 +60,15 @@ export const authOptions: NextAuthOptions = {
     ],
     callbacks: {
         async jwt({ token, user }) {
+
+            console.log("The user is : " + user);
             if (user) {
                 token.id = user.id; // ✅ Fixed ID reference
             }
             return token;
         },
         async session({ session, token }) {
+            console.log("The user present in session :" + session.user);
             if (session.user) {
                 session.user.id = token.id as string;
             }
